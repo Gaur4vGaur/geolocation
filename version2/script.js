@@ -1,4 +1,4 @@
-// method to display the geolocation
+// method to display the geolocation, altitude, direction, speed
 function displayLocation(position) {
     var latitude = position.coords.latitude;
     var longitude = position.coords.longitude;
@@ -38,6 +38,7 @@ function displayError(error) {
     console.warn("Error in getting your location" + message + error.message);
 }
 
+// onload function to define the action that should be perfomed once the page is loaded
 window.onload = function() {
     if(navigator.geolocation) {
         // display location is function passed to getCurrentPosition for callback with position
