@@ -1,4 +1,4 @@
-a// method to display the geolocation
+// method to display the geolocation
 var trackId = null;
 var locations = [];
 
@@ -43,7 +43,7 @@ function computeTotalDistance() {
             totalDistance += google.maps.geometry.spherical.computeDistanceBetween(locations[i-1], locations[i]);
         }
     }
-    
+
     return totalDistance;
 }
 
